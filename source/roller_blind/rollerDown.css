@@ -1,0 +1,10 @@
+@keyframes rollerDown {
+  from {
+    height: 0px;
+  }
+}
+
+.rollerDown {
+  animation-name: rollerDown;
+  animation-timing-function: ease-out;
+}

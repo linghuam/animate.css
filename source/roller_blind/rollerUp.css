@@ -1,0 +1,10 @@
+@keyframes rollerUp {
+  to {
+    height: 0px;
+  }
+}
+
+.rollerUp {
+  animation-name: rollerUp;
+  animation-timing-function: ease-in;
+}

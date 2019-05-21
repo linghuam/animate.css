@@ -1,0 +1,10 @@
+@keyframes rollerDownLeft {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.rollerDownLeft {
+  animation-name: rollerDownLeft;
+}

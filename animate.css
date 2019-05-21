@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /*!
- * animate.css -http://daneden.me/animate
+ * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2018 Daniel Eden
+ * Copyright (c) 2019 Daniel Eden
  */
 
 @-webkit-keyframes bounce {
@@ -3556,6 +3556,58 @@
   animation-name: slideOutUp;
 }
 
+@-webkit-keyframes rollerDown {
+  from {
+    height: 0px;
+  }
+}
+
+@keyframes rollerDown {
+  from {
+    height: 0px;
+  }
+}
+
+.rollerDown {
+  -webkit-animation-name: rollerDown;
+  animation-name: rollerDown;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes rollerUp {
+  to {
+    height: 0px;
+  }
+}
+@keyframes rollerUp {
+  to {
+    height: 0px;
+  }
+}
+
+.rollerUp {
+  -webkit-animation-name: rollerUp;
+  animation-name: rollerUp;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+@-webkit-keyframes rollerDownLeft {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+}
+@keyframes rollerDownLeft {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.rollerDownLeft {
+  -webkit-animation-name: rollerDownLeft;
+  animation-name: rollerDownLeft;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

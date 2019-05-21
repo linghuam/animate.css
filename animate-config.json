@@ -117,5 +117,11 @@
     "slideOutLeft": true,
     "slideOutRight": true,
     "slideOutUp": true
+  },
+
+  "roller_blind": {
+    "rollerDown": true,
+    "rollerUp": true,
+    "rollerDownLeft": true
   }
 }
