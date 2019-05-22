@@ -123,5 +123,9 @@
     "rollerDown": true,
     "rollerUp": true,
     "rollerDownLeft": true
+  },
+
+  "animate_3d": {
+    "rotate3dX": true
   }
 }

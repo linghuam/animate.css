@@ -3574,11 +3574,13 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
+
 @-webkit-keyframes rollerUp {
   to {
     height: 0px;
   }
 }
+
 @keyframes rollerUp {
   to {
     height: 0px;
@@ -3591,12 +3593,14 @@
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
+
 @-webkit-keyframes rollerDownLeft {
   from {
     width: 0px;
     height: 0px;
   }
 }
+
 @keyframes rollerDownLeft {
   from {
     width: 0px;
@@ -3607,6 +3611,40 @@
 .rollerDownLeft {
   -webkit-animation-name: rollerDownLeft;
   animation-name: rollerDownLeft;
+}
+
+@-webkit-keyframes rotate3dX {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(-180deg);
+    transform: perspective(1400px) rotateX(-180deg);
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(0deg);
+    transform: perspective(1400px) rotateX(0deg);
+  }
+}
+
+@keyframes rotate3dX {
+  from {
+    -webkit-transform: perspective(1400px) rotateX(-180deg);
+    transform: perspective(1400px) rotateX(-180deg);
+  }
+  to {
+    -webkit-transform: perspective(1400px) rotateX(0deg);
+    transform: perspective(1400px) rotateX(0deg);
+  }
+}
+
+.rotate3dX {
+  /* perspective: 1400px; */
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: rotate3dX 3s ease-in-out;
+  animation: rotate3dX 3s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .animated {
   -webkit-animation-duration: 1s;
