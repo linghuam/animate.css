@@ -1,0 +1,17 @@
+@keyframes rotate3dY {
+  from {
+    transform: perspective(400px) translateX(-100%) rotateY(-180deg);
+  }
+
+  to {
+    transform: perspective(400px) translateX(0) rotateY(0deg);
+  }
+}
+
+.rotate3dY {
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  backface-visibility: hidden;
+  animation-name: rotate3dY;
+  animation-duration: 2s;
+}

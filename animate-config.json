@@ -126,6 +126,9 @@
   },
 
   "animate_3d": {
-    "rotate3dX": true
+    "rotate3dX": true,
+    "rotate3dY": true,
+    "rotate3dZ": true,
+    "rotate3dXYZ": true
   }
 }

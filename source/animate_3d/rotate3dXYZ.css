@@ -1,0 +1,16 @@
+@keyframes rotate3dXYZ {
+  from {
+    transform: perspective(400px) rotateZ(-180deg) rotateY(-90deg);
+  }
+  to {
+    transform: perspective(400px) rotateZ(0deg) rotateY(0deg);
+  }
+}
+
+.rotate3dXYZ {
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  animation-name: rotate3dXYZ;
+  animation-duration: 3s;
+}

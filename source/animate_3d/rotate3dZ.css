@@ -1,0 +1,22 @@
+@keyframes rotate3dZ {
+  from {
+    transform: perspective(400px) translateZ(-2000px) rotateZ(0);
+  }
+  33.33% {
+    transform: perspective(400px) translateZ(0px) rotateZ(360deg);
+  }
+  66.66% {
+    transform: perspective(400px) translateZ(200px) rotateZ(360deg);
+  }
+  to {
+    transform: perspective(400px) translateZ(0px) rotateZ(360deg);
+  }
+}
+
+.rotate3dZ {
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  animation-name: rotate3dZ;
+  animation-duration: 3s;
+}
