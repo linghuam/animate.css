@@ -1992,8 +1992,8 @@
 .animated.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: flip;
-  animation-name: flip;
+  -webkit-animation-name: flip, flipInX;
+  animation-name: flip, flipInX;
 }
 
 @-webkit-keyframes flipInX {
@@ -3737,6 +3737,7 @@
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
 }
+
 @-webkit-keyframes rotate3dXYZ {
   from {
     -webkit-transform: perspective(400px) rotateZ(-180deg) rotateY(-90deg);
@@ -3747,6 +3748,7 @@
     transform: perspective(400px) rotateZ(0deg) rotateY(0deg);
   }
 }
+
 @keyframes rotate3dXYZ {
   from {
     -webkit-transform: perspective(400px) rotateZ(-180deg) rotateY(-90deg);
@@ -3770,6 +3772,7 @@
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
 }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
